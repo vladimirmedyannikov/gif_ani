@@ -115,7 +115,6 @@ class _AnimatedImageState extends State<GifAnimation> {
 
   void _listener() {
     int _idx = _tween.evaluate(widget.controller) ~/ 1;
-    print("idx:$_idx");
     if (_idx >= widget.controller.frameCount) {
       _idx = widget.controller.frameCount - 1;
     }
